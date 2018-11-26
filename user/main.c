@@ -1,7 +1,7 @@
 #include "stm32f10x.h"
 #include "main.h"
 
-
+/*
 #define LED_ON()   GPIO_ResetBits(GPIOC , GPIO_Pin_13)
 #define LED_OFF()  GPIO_SetBits(GPIOC , GPIO_Pin_13)
 #define LED_REV()  GPIO_Write(GPIOC , GPIO_ReadOutputData(GPIOC) ^ GPIO_Pin_13)
@@ -158,5 +158,20 @@ int main(void)
 		IR_5_Send();
 		IR_6_Send();
 	}
+}
+*/
+
+void UserRCC_Config(void)
+{
+	SystemInit();
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+}
+
+
+int main()
+{
+	UserRCC_Config();
+    TIM1_PWM_CH1_Config(72000000, 38000, 0.5);
 }
 

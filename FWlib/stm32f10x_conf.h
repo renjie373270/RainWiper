@@ -42,12 +42,11 @@
 /* #include "stm32f10x_rtc.h" */
 /* #include "stm32f10x_sdio.h" */
 /* #include "stm32f10x_spi.h" */
-/* #include "stm32f10x_tim.h" */
+#include "stm32f10x_tim.h"
 /* #include "stm32f10x_usart.h" */
 /* #include "stm32f10x_wwdg.h" */
 #include "stm32f10x_systick.h"
 #include "misc.h"   /* High level functions for NVIC and SysTick (add-on to CMSIS functions) */
-/*#include "stm32f10x_tft.h"*/
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
