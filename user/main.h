@@ -7,5 +7,6 @@
 #include "led.h"
 #include "UserSysTick.h"
 #include "exti.h"
+#include "IR.h"
 
 #endif

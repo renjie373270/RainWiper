@@ -13,17 +13,9 @@ void AllDeviceInit(void)
 int main()
 {
     AllDeviceInit();
-		LED_OFF();
+    LED_OFF();
     while(1) {
-			
-		}
+        IR_Handle();
+    }
 }
 
-
-void EXTI15_10_IRQHandler(void) {
-    EXTI_ClearFlag(EXTI_Line12);
-    LED_Flash();
-		LED_Flash();
-		LED_Flash();
-		LED_OFF();
-}
