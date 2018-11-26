@@ -6,5 +6,6 @@
 #include "pwm.h"
 #include "led.h"
 #include "UserSysTick.h"
+#include "exti.h"
 
 #endif

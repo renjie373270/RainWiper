@@ -22,6 +22,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
+#include "main.h"
 
 /** @addtogroup StdPeriph_Examples
   * @{
@@ -163,6 +164,11 @@ void SysTick_Handler(void)
 {
 }*/
 
+void EXTI0_IRQHandler(void) {
+}
+
+//void EXTI15_10_IRQHandler(void) {
+//}
 /**
   * @}
   */

@@ -18,7 +18,7 @@ void TIM1_PWM_CH1_Config(uint32_t systemFreq, uint32_t pwmFreq, float dutyRatio)
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
 
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 ;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(GPIOA, &GPIO_InitStructure);
@@ -43,5 +43,13 @@ void TIM1_PWM_CH1_Config(uint32_t systemFreq, uint32_t pwmFreq, float dutyRatio)
 
     TIM_OC1PreloadConfig(TIM1, TIM_OCPreload_Enable);
     TIM_Cmd(TIM1, ENABLE);
+    TIM_CtrlPWMOutputs(TIM1, ENABLE);
+}
+
+void PWM_OFF() {
+    TIM_CtrlPWMOutputs(TIM1, DISABLE);
+}
+
+void PWM_ON() {
     TIM_CtrlPWMOutputs(TIM1, ENABLE);
 }
