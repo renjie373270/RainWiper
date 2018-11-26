@@ -1,11 +1,11 @@
 //
-// Created by Administrator on 2018/11/26 0026.
+// Created by RenJie on 2018/11/26 0026.
 //
 
 #ifndef RAINWIPER_PWM_H
 #define RAINWIPER_PWM_H
 
-#include "stm32f10x.h"
+#include "main.h"
 
 
 /**

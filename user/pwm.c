@@ -1,8 +1,8 @@
 //
-// Created by Administrator on 2018/11/26 0026.
+// Created by RenJie on 2018/11/26 0026.
 //
 
-#include "pwm.h"
+#include "main.h"
 
 
 void TIM1_PWM_CH1_Config(uint32_t systemFreq, uint32_t pwmFreq, float dutyRatio) {
