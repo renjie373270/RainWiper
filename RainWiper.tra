@@ -26,7 +26,7 @@
 ### ADS-LD Output File: 'RainWiper.axf'
 ### ADS-LD Command File: 'RainWiper.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'RainWiper.lnp', Handle=0x0000082C
+### Creating CmdFile 'RainWiper.lnp', Handle=0x0000036C
 ### Writing '.lnp' file
 ### ADS-LD Command file 'RainWiper.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

@@ -3,3 +3,9 @@
 *.__i
 CMakeLists.txt
 *.crf
+*.axf
+*.map
+*.plg
+*.tra
+*.hex
+*.dep
